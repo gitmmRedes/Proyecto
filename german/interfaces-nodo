@@ -1,0 +1,27 @@
+auto lo
+iface lo inet loopback
+
+#iface eno1 inet manual
+iface eno1 inet6 manual
+
+auto vmbr0
+iface vmbr0 inet static 
+	address 192.168.102.101	
+	network 192.168.102.0
+	netmask 255.255.255.0
+	broadcast 192.168.102.255
+	dns-nameservers 192.168.102.1
+	gateway 192.168.102.1
+	bridge_ports eno1
+	bridge_stp off
+	bridge_fd 0
+
+
+iface vmbr0 inet6 static
+	address 2001:1:1:8::bb11
+	netmask 64
+	gateway 2001:1:1:8::1
+	bridge_ports eno1
+	bridge_stp off
+	bridge_fd 0
+
