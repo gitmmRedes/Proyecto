@@ -1,0 +1,9 @@
+Server=2001:1:1:8::a5b4
+ServerActive=2001:1:1:8::a5b4
+Hostname=ZabbixWin
+ListenPort=10050
+ListenIP=2001:1:1:8::59
+StartAgent=5
+EnableRemoteCommands=1
+DebugLevel=3
+Timeout=3
