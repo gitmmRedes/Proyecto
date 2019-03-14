@@ -1,4 +1,4 @@
-<VirtualHost [2001:1:1:8::4]:1895>
+<VirtualHost *:90>
 	# The ServerName directive sets the request scheme, hostname and port that
 	# the server uses to identify itself. This is used when creating
 	# redirection URLs. In the context of virtual hosts, the ServerName
@@ -9,8 +9,9 @@
 	#ServerName www.example.com
 
 	ServerAdmin webmaster@localhost
-	ServerName ea.proyecto.ae
+	#ServerName ea.proyecto.ae
 	DocumentRoot /var/www/ProyectoAE/Virtuales/vu1
+	DirectoryIndex indexVu1
 
 	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
 	# error, crit, alert, emerg.
